@@ -1,0 +1,4 @@
+*/*.img
+*/stats-*
+.attach*
+*/dump4.log
