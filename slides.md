@@ -212,6 +212,18 @@ docker build -t pre_crack -f crac2/Dockerfile crac2
 # Now let's crack it and launch from snapshot!
 
 ```bash
+docker run -d pre_crack
+```
+<!-- pause -->
+Will fail on checkpoint
+<!-- pause -->
+```bash
+docker run --privileged -d pre_crack
+```
+<!-- pause -->
+Knock-knock!
+<!-- pause -->
+```bash
 docker run --cap-add CAP_SYS_PTRACE --cap-add CAP_CHECKPOINT_RESTORE -d pre_crack
 ```
 
